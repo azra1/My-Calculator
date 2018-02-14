@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.techfreaks.mycalculator.FrontActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#a9a9a9"
+        android:text="+"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:id="@+id/plusButton"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/plusButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="-"
+        android:background="#a9a9a9"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:padding="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/minusButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:background="#a9a9a9"
+        android:textSize="30dp"
+        android:text="×"
+        android:id="@+id/multiplyButton"
+        android:padding="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/multiplyButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:background="#a9a9a9"
+        android:textSize="30dp"
+        android:text=" ÷ "
+        android:id="@+id/divisionButton"
+        android:padding="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/divisionButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:background="#a9a9a9"
+        android:textSize="20dp"
+        android:text=" del"
+        android:id="@+id/deleteButton"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/equalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/plusButton"
+        android:layout_toStartOf="@+id/plusButton"
+        android:background="#696969"
+        android:text=" ="
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/threeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/plusButton"
+        android:layout_alignLeft="@+id/equalButton"
+        android:layout_alignStart="@+id/equalButton"
+        android:background="#696969"
+        android:padding="10dp"
+        android:text="3"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        />
+
+    <Button
+        android:id="@+id/sixButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/threeButton"
+        android:layout_alignLeft="@+id/threeButton"
+        android:layout_alignStart="@+id/threeButton"
+        android:background="#696969"
+        android:padding="10dp"
+        android:text="6"
+        android:textColor="#ffff"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/nineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sixButton"
+        android:layout_alignTop="@+id/deleteButton"
+        android:layout_toLeftOf="@+id/divisionButton"
+        android:layout_toStartOf="@+id/divisionButton"
+        android:background="#696969"
+        android:padding="5dp"
+        android:text="9"
+        android:textColor="#ffff"
+        android:textSize="35dp" />
+
+
+
+</RelativeLayout>
